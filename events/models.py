@@ -14,6 +14,7 @@ class Events(models.Model):
     event_trophies_name = models.CharField(max_length=255, null=True, blank=True)
     event_date = models.DateField(auto_now=False)
     is_upcoming = models.BooleanField(default=True)
+    organised_by = models.CharField(max_length=255, null=True, blank=True)
 
     class Meta:
         verbose_name = "Event"

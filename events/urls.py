@@ -9,5 +9,5 @@ urlpatterns = [
     path("events/", views.EventsAPIView.as_view(), name="events"),
     path("result/", views.ResultAPIView.as_view(), name="event-result"),
     path("event-result/", views.EventResultAPIView.as_view(), name="event-result"),
-    path("event-result/<int:id>", views.EventResultAPIView.as_view(), name="event-result"),
+    path("event-result/<int:pk>/", views.EventResultRetrieveAPIView.as_view(), name="event-result"),
 ]

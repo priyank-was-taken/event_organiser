@@ -11,7 +11,7 @@ class EventSerializer(serializers.ModelSerializer):
 class ReadEventSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Events
-        fields = ["id", "event_image", "event_title", "event_date", "event_category"]
+        fields = ["id", "event_image", "event_title", "event_date", "event_category", "organised_by"]
 
 
 class ResultSerializer(serializers.ModelSerializer):
